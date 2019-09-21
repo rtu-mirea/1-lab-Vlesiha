@@ -35,7 +35,7 @@ public class Main {
                 mass1.output_left();
                 System.out.println("\nМассив справа налево: ");
                 mass1.output_right();
-                System.out.println("\nВведите число: ");
+                System.out.println("\nВведите число для проверки: ");
                 int numeric = in.nextInt();
                 mass1.cifri(numeric);
                 System.out.println("Введите номер места нового числа: ");

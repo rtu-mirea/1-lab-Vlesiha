@@ -42,7 +42,7 @@ public class Array1 {
     void random_mass() //ввод рандомно
     {
         for (int i = 0; i<n;i++) {
-            mass1[i] = (long)(Math.random()*100);
+            mass1[i] = (long)(Math.random()*1000000000);
         }
         System.out.println("Массив введен: ");
     }

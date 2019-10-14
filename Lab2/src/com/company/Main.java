@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
         boolean OK = true;
-        while(true) {
             while(OK) {
                 System.out.println("Введите номер задания:\n1. String\n2. StringBuilder\n3. Регулярные выражения (Разбить числа строки по разрядам)");
                 Scanner in = new Scanner(System.in);
@@ -68,9 +67,14 @@ public class Main {
                         OK = false;
                         break;
                     }
+                    if (check == 1)
+                    {
+                        OK=true;
+                        break;
+                    }
                 }
             }
             return;
-        }
+
     }
 }

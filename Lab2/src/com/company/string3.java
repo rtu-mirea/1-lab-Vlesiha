@@ -13,7 +13,7 @@ public class string3 {
         sentence3 = "Цифры 11112345678, 1234634, 2524623523542, 3452523";
         mainStr3 = new String(sentence3);
     }
-    void strangeNumeric()
+    String strangeNumeric()
     {
         Pattern pattern = Pattern.compile("\\s*\\d*\\s*"); //поиск цифр
         String[] words = mainStr3.split("[,\\s]"); //обрезаем строку
@@ -37,7 +37,7 @@ public class string3 {
             }
             newstr+=words[i]+ " ";
         }
-        System.out.println(newstr);
+        return newstr;
     }
 
 }

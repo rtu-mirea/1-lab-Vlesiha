@@ -11,7 +11,7 @@ public class string1 {
         sentence = "Мальчик в своем путешествии сделал большую ошибку. Он доверился незнакомому разбойнику. Разбойник отобрал все его ценности. она никогда не прощает. Цифры для примера 2, 5, 1, 7, 14, 15, 21";
         mainStr = new String(sentence);
     }
-    void vowel()
+    String vowel()
     {
         String[] copystr = mainStr.split(" ");
         String substr = "";
@@ -22,9 +22,9 @@ public class string1 {
                 substr = substr + word + " ";
             }
         }
-        System.out.println(substr);
+        return substr;
     }
-    void wordlen(String in)
+    int wordlen(String in)
     {
         int count= 0;
         String[] copystr = mainStr.split(" ");
@@ -36,9 +36,9 @@ public class string1 {
                 count++;
             }
         }
-        System.out.println("Количество слов по длинне больше заданного: "+count);
+        return count;
     }
-    void prefix()
+    String prefix()
     {
         String[] copystr = mainStr.split(" ");
         String substr = "";
@@ -50,9 +50,9 @@ public class string1 {
                 substr.toLowerCase();
             }
         }
-        System.out.println(substr);
+        return  substr;
     }
-    void numbers(int num1, int num2)
+    int numbers(int num1, int num2)
     {
         int count=0;
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -69,6 +69,6 @@ public class string1 {
                 count++;
             }
         }
-        System.out.println("Кол-во чисел, принадлежащих диапазону: " + count);
+        return count;
     }
 }

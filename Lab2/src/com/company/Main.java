@@ -19,22 +19,22 @@ public class Main {
                         string1 mainStr = new string1();
                         switch (numz){
                             case 1:
-                                mainStr.vowel();
+                                System.out.println("Предложение из слов, начинающихся и заканчивающихся с гласных: " + mainStr.vowel());
                                 break;
                             case 2:
                                 System.out.println("Введите строку для сравнения: ");
                                 String enter = in.next();
-                                mainStr.wordlen(enter);
+                                System.out.println("Кол-во слов по длинне больше вводимого: " + mainStr.wordlen(enter));
                                 break;
                             case 3:
-                                mainStr.prefix();
+                                System.out.println("Все слова с приставками пре и при: " +  mainStr.prefix());
                                 break;
                             case 4:
                                 System.out.println("Введите перове число интервала: ");
                                 int enternum1 = in.nextInt();
                                 System.out.println("Введите второе число интервала: ");
                                 int enternum2 = in.nextInt();
-                                mainStr.numbers(enternum1,enternum2);
+                                System.out.println("Кол-во чисел, принадлежащих диапазону: "+ mainStr.numbers(enternum1, enternum2));
                                 break;
 
                         }
@@ -45,19 +45,19 @@ public class Main {
                         string2 mainStr2 = new string2();
                         switch (numza){
                             case 1:
-                                mainStr2.deleting();
+                                System.out.println("Удалить из строки все слова на пре и при: " + mainStr2.deleting());
                                 break;
                             case 2:
-                                mainStr2.nums7();
+                                System.out.println("Заменить числа некратные 7 на результат этого деления: "+ mainStr2.nums7());
                                 break;
                             case 3:
-                                mainStr2.zero7();
+                                System.out.println("Добавить перед каждым словом семь нолей: "+ mainStr2.zero7());
                                 break;
                         }
                         break;
                     case 3:
                         string3 mainStr3 = new string3();
-                        mainStr3.strangeNumeric();
+                        System.out.println("Разбить числа строки по разрядам: "+ mainStr3.strangeNumeric());
                         break;
                 }
                 System.out.println("Если хотите запустить программу заново нажмите 1, иначе нажмите 0: ");
